@@ -80,11 +80,11 @@
     var number = document.getElementById("number");
   
     myInput.onfocus = function(){
-      document.getElementById ("message") .style.display = "block";
+      document.getElementById("message").style.display = "block";
     }
     myInput.onblur = function ()
     {
-      document.getElementById("message") .style.display = "none";
+      document.getElementById("message").style.display = "none";
     }
     myInput.onkeyup = function ()
     {
@@ -103,11 +103,11 @@
       var numbers = /[0-9]/g;
       if(myInput.value.match(numbers)) {
         number.classList.remove("invalid");
-        number.classList.add ("valid")
+        number.classList.add("valid")
       } else{
-        number.classList.add ("invalid");
+        number.classList.add("invalid");
       }
-      if (myInput.value.length >=8){
+      if (myInput.value.length >= 8){
         length.classList.add("valid")
       } else{
         length.classList.remove("valid");
@@ -117,7 +117,7 @@
 </script>
     
 
-<script src="./SignUp.js"></script>
+<script src="./signup.js"></script>
 </body>
 <header></header>
 <main></main>
